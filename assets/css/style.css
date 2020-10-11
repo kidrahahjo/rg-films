@@ -210,7 +210,7 @@ html, body {
 
 @media (max-width: 991px) {
   html, body {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
   .mobile-top-fix {
     margin-top: 30px;
@@ -542,6 +542,7 @@ header
     }
 }
 
+
 /*
 ---------------------------------------------
 welcome
@@ -712,11 +713,16 @@ what-we-do
 team
 ---------------------------------------------
 */
+.team{
+  margin-right: auto;
+  margin-left: auto;
+}
 .team-item {
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
   border-radius: 24px;
   margin-bottom: 30px;
+  margin-left: 50px;
   padding-bottom: 25px;
   padding: 24px;
   text-align: center;
@@ -755,7 +761,10 @@ team
 gallery
 ---------------------------------------------
 */
-
+/* a{
+  background-color: #101820ff;
+  opacity: 0.1;
+} */
 
 
 /*
