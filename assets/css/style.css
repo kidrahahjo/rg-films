@@ -767,8 +767,8 @@ gallery
   background-color: #101820ff;
   opacity: 0.4;
 }
- .styling{
-   padding: 8px !important;
+div .carousel-item > div .blog-post-thumb{
+   padding: 8px;
 }
 /*
 ---------------------------------------------
