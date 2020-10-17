@@ -209,9 +209,6 @@ html, body {
 }
 
 @media (max-width: 991px) {
-  html, body {
-    /* overflow-x: hidden; */
-  }
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
@@ -770,9 +767,9 @@ gallery
   background-color: #101820ff;
   opacity: 0.4;
 }
- div .carousel-item > div .blog-post-thumb{
+div .carousel-item > div .blog-post-thumb{
    padding: 8px;
- }
+}
 /*
 ---------------------------------------------
 blog
