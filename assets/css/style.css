@@ -286,7 +286,7 @@ header
 */
 .header-area {
     position: fixed;
-    top: 30px;
+    top: 0px;
     left: 0px;
     right: 0px;
     z-index: 100;
@@ -299,7 +299,7 @@ header
 
 .header-area .main-nav {
     box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-    border-radius: 40px;
+    border-radius: 20px;
     min-height: 80px;
     background: #fff;
 }
@@ -767,9 +767,9 @@ gallery
   background-color: #101820ff;
   opacity: 0.4;
 }
- div .carousel-item > div .blog-post-thumb{
-   padding: 8px;
- }
+ .styling{
+   padding: 8px !important;
+}
 /*
 ---------------------------------------------
 blog
