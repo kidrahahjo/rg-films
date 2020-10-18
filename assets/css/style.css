@@ -51,12 +51,12 @@ html, body {
 }
 
 ::selection {
-  background: #101820ff;
+  background: #f2aa4cff;
   color: #101820ff;
 }
 
 ::-moz-selection {
-  background: #101820ff;
+  background: #f2aa4cff;
   color: #101820ff;
 }
 
@@ -67,7 +67,7 @@ html, body {
 }
 
 .section.colored {
-  background: #101820ff;
+  background: #f2aa4cff;
 }
 
 .center-heading {
