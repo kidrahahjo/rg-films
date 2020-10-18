@@ -718,8 +718,7 @@ team
   margin-left: auto;
 }
 .team-item {
-  background: #fff;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  background: #101820ff;
   border-radius: 24px;
   margin-bottom: 30px;
   margin-left: 50px;
@@ -732,7 +731,6 @@ team
 .team-item img {
   height: 200px;
   position: relative;
-  padding: 10%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -743,7 +741,8 @@ team
   display: block;
   font-weight: 400;
   font-size: 17px;
-  color: #101820ff;
+  padding-top: 5%;
+  color: #f2aa4cff;
   letter-spacing: 0.25px;
   margin-bottom: 5px;
 }
@@ -752,7 +751,7 @@ team
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: #fff;
   letter-spacing: 0.25px;
 }
 
