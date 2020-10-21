@@ -51,12 +51,12 @@ html, body {
 }
 
 ::selection {
-  background: #101820ff;
+  background: #f2aa4cff;
   color: #101820ff;
 }
 
 ::-moz-selection {
-  background: #101820ff;
+  background: #f2aa4cff;
   color: #101820ff;
 }
 
@@ -67,7 +67,7 @@ html, body {
 }
 
 .section.colored {
-  background: #101820ff;
+  background: #f2aa4cff;
 }
 
 .center-heading {
@@ -209,9 +209,6 @@ html, body {
 }
 
 @media (max-width: 991px) {
-  html, body {
-    /* overflow-x: hidden; */
-  }
   .mobile-top-fix {
     margin-top: 30px;
     margin-bottom: 0px;
@@ -608,7 +605,8 @@ what-we-do
 }
 
 .features-small-item:hover .icon {
-  background-color: #f2aa4cff;
+  border: dotted;
+  border-color: #f2aa4cff;
 }
 
 .features-small-item .icon {
@@ -622,10 +620,12 @@ what-we-do
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #101820ff;
+  background: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%;
+  border: solid;
+  border-color: #f2aa4cff;
+  border-radius: 100%;
 }
 
 .features-small-item .features-title {
@@ -718,8 +718,7 @@ team
   margin-left: auto;
 }
 .team-item {
-  background: #fff;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  background: #101820ff;
   border-radius: 24px;
   margin-bottom: 30px;
   margin-left: 50px;
@@ -732,7 +731,6 @@ team
 .team-item img {
   height: 200px;
   position: relative;
-  padding: 10%;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -743,7 +741,8 @@ team
   display: block;
   font-weight: 400;
   font-size: 17px;
-  color: #101820ff;
+  padding-top: 5%;
+  color: #f2aa4cff;
   letter-spacing: 0.25px;
   margin-bottom: 5px;
 }
@@ -752,7 +751,7 @@ team
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: #fff;
   letter-spacing: 0.25px;
 }
 
@@ -770,9 +769,9 @@ gallery
   background-color: #101820ff;
   opacity: 0.4;
 }
- .styling{
-   padding: 8px !important;
- }
+div .carousel-item > div .blog-post-thumb{
+   padding: 8px;
+}
 /*
 ---------------------------------------------
 blog
@@ -891,4 +890,3 @@ footer .address {
 
 
 
-data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e
