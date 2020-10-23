@@ -727,7 +727,11 @@ team
   text-align: center;
   overflow: hidden;
 }
-
+@media screen and (max-width: 990px){
+  .team-item{
+    margin-left: 0px;
+  }
+}
 .team-item img {
   height: 200px;
   position: relative;
@@ -762,12 +766,12 @@ gallery
 */
 .gallery-arrow{
   background-color: #101820ff;
-  opacity: 0;
+  opacity: 0.4;
 }
 
 .gallery-arrow:hover {
   background-color: #101820ff;
-  opacity: 0.4;
+  opacity: 0.09;
 }
 div .carousel-item > div .blog-post-thumb{
    padding: 8px;

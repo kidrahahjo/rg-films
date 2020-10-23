@@ -5,6 +5,30 @@
 	// Window Resize Mobile Menu Fix
 	mobileNav();
 
+	//Mobile view of carousel
+	var controleScreenHeight = function(){
+		var width = window.innerWidth;
+		var height = window.innerHeight;
+		console.log(width);
+		if (width < 500){
+		  $('#gallery-carousel1mobile').show();
+		  $('#news-carousel1mobile').show();
+		}
+		else if(width<992){
+			$('#gallery-carousel1ipad').show();
+			$('#news-carousel1ipad').show();
+		}
+		else{
+		  $('#gallery-carousel1').show();
+		  $('#news-carousel1').show();
+		}
+	};
+	var init = function () {
+	$('#gallery-carousel1, #gallery-carousel1mobile, #gallery-carousel1ipad, #news-carousel1, #news-carousel1mobile, #news-carousel1ipad').hide();
+	controleScreenHeight();
+	};
+	$(document).ready(init());
+
 
 	// Scroll animation init
 	window.sr = new scrollReveal();
@@ -17,6 +41,62 @@
 			$('.header-area .nav').slideToggle(200);
 		});
 	}
+	
+	// Menu elevator animation
+	$('a[href*=\\#]:not([href=\\#])').on('click', function() {
+		if( $(this).attr("href")=="#news-carousel1") return;
+		if( $(this).attr("href")=="#gallery-carousel1") return;
+		if( $(this).attr("href")=="#news-carousel1ipad") return;
+		if( $(this).attr("href")=="#gallery-carousel1ipad") return;
+		if( $(this).attr("href")=="#gallery-carousel1mobile") return;
+		if( $(this).attr("href")=="#news-carousel1mobile") return;
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				var width = $(window).width();
+				if(width < 991) {
+					$('.menu-trigger').removeClass('active');
+					$('.header-area .nav').slideUp(200);	
+				}				
+				$('html,body').animate({
+					scrollTop: (target.offset().top) - 130
+				}, 700);
+				return false;
+			}
+		}
+	});
+
+	$(document).ready(function () {
+	    $(document).on("scroll", onScroll);
+
+	    //smoothscroll
+	    $('a[href^="#"]').on('click', function (e) {
+			if( $(this).attr("href")=="#news-carousel1") return;
+			if( $(this).attr("href")=="#gallery-carousel1") return;
+			if( $(this).attr("href")=="#news-carousel1ipad") return;
+			if( $(this).attr("href")=="#gallery-carousel1ipad") return;
+			if( $(this).attr("href")=="#news-carousel1mobile") return;
+			if( $(this).attr("href")=="#gallery-carousel1mobile") return;
+	        e.preventDefault();
+	        $(document).off("scroll");
+
+	        $('a').each(function () {
+	            $(this).removeClass('active');
+	        })
+	        $(this).addClass('active');
+
+	        var target = this.hash,
+	        menu = target;
+	       	var target = $(this.hash);
+	        $('html, body').stop().animate({
+	            scrollTop: (target.offset().top) - 130
+	        }, 500, 'swing', function () {
+	            window.location.hash = target;
+	            $(document).on("scroll", onScroll);
+	        });
+	    });
+	});
 
 	function onScroll(event){
 	    var scrollPos = $(document).scrollTop();
@@ -67,7 +147,7 @@
 		});
 	});
 
-
+	
 	// Window Resize Mobile Menu Fix
 	$(window).on('resize', function() {
 		mobileNav();
