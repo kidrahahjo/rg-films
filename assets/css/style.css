@@ -313,7 +313,7 @@ header
     margin-left: 30px;
 }
 
-.header-area .main-nav .logo img {
+.header-area .main-nav .logo img{
     height: 60px;
     position: relative;
     margin-top: -16px;
@@ -322,6 +322,7 @@ header
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 
 .header-area .main-nav .nav {
     float: right;
@@ -721,12 +722,13 @@ team
   background: #101820ff;
   border-radius: 24px;
   margin-bottom: 30px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   padding-bottom: 25px;
   padding: 24px;
   text-align: center;
   overflow: hidden;
 }
+
 @media screen and (max-width: 990px){
   .team-item{
     margin-left: 0px;
@@ -758,7 +760,18 @@ team
   color: #fff;
   letter-spacing: 0.25px;
 }
-
+.pop-up{
+  z-index: 20;
+  position: absolute;
+  background-color: #fff;
+}
+#producer{
+  display: none;
+  z-index: 100;
+  position: absolute;
+  background-color: #fff;
+}
+    
 /*
 ---------------------------------------------
 gallery
@@ -776,6 +789,13 @@ gallery
 div .carousel-item > div .blog-post-thumb{
    padding: 8px;
 }
+.styling{
+  height: 340px;
+}
+.gallery-image{
+  height: 320px !important;
+}
+
 /*
 ---------------------------------------------
 blog
@@ -800,7 +820,7 @@ blog
   overflow: hidden;
   border-radius: 20px;
   position: relative;
-  height: 200px;
+  height: 200px;  /*changed height*/
 }
 
 .blog-post-thumb .blog-content {
