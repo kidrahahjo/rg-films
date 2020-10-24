@@ -777,15 +777,11 @@ team
 gallery
 ---------------------------------------------
 */
-.gallery-arrow{
+.gallery-arrow .gallery-arrow:hover .gallery-arrow:active .gallery-arrow:focus{
   background-color: #101820ff;
-  opacity: 0.4;
+  opacity: 1;
 }
 
-.gallery-arrow:hover {
-  background-color: #101820ff;
-  opacity: 0.09;
-}
 div .carousel-item > div .blog-post-thumb{
    padding: 8px;
 }
@@ -794,6 +790,26 @@ div .carousel-item > div .blog-post-thumb{
 }
 .gallery-image{
   height: 320px !important;
+  width: 100%;
+}
+@media screen and (max-width: 767px){
+  /* .styling{
+    width: 80%;
+    height: auto;
+  }
+  div #gallery-carousel1 > div .carousel-item{
+    margin-left: 10%;
+  } */
+  
+  .carousel-item{
+   max-width: 80%;
+   height: max-content;
+    margin-left: 10%;
+  }
+  /* .carousel-inner{
+    height: max-content;
+  } */
+
 }
 
 /*
