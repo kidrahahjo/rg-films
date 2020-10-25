@@ -39,7 +39,7 @@ header, nav, section, footer {
 }
 
 .container {
-  align-items: center;
+  align-items: cente
 }
 
 /*
@@ -606,6 +606,21 @@ what-we-do
   position: relative;
   margin-bottom: 30px;
 }
+@media (min-width: 577px) and (max-width: 767px){
+  .features-small-item{
+    height: 471px;
+  }
+}
+@media (min-width:768px) and (max-width: 991px){
+  .features-small-item{
+    height: 396px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .features-small-item{
+    height: 346px;
+  }
+}
 
 .features-small-item:hover .icon {
   border: dotted;
@@ -656,7 +671,6 @@ what-we-do
   position: relative;
   z-index: 2;
 }
-
 .home-feature {
   padding-bottom: 0px;
   padding-top: 30px;
