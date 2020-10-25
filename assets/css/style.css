@@ -1,4 +1,6 @@
-/* ---------------------------------------------
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*//* ---------------------------------------------
 Table of contents
 ------------------------------------------------
 01. setup
@@ -763,14 +765,55 @@ team
 .pop-up{
   z-index: 20;
   position: absolute;
-  background-color: #fff;
+  background-color: #101820ff;
+  color: #fff;
 }
-#producer{
-  display: none;
-  z-index: 100;
-  position: absolute;
-  background-color: #fff;
+.close{
+    float:right;
 }
+/*#producer{  */
+/*  z-index: 100;*/
+  /*display: none;*/
+/*  position: absolute;*/
+/*}*/
+/*#director{*/
+/*  z-index: 100;*/
+  /*display: none;*/
+/*  position: absolute;*/
+/*}*/
+.information{
+  text-align: center !important;
+  background-color: #101820ff;
+  color: #fff;
+}
+/*#close-button{*/
+/*  float: right;*/
+/*  border: none;*/
+/*  font-weight: bold;*/
+/*  background-color: #fff;*/
+/*  color:#000;*/
+  
+/*}*/
+/*#close-button:hover{*/
+/*  background-color: #fff;*/
+/*  color:#000;*/
+
+/*}*/
+.modal-dialog .modal-content{
+  background-color: #101820ff;
+}
+.xyz{
+  float: right;
+  align-items: right;
+}
+ .close-modal-button .close{
+  /* background-color: #fff; */
+  color: #fff;
+}
+.xyz{
+  color: #fff;
+}
+
     
 /*
 ---------------------------------------------
@@ -927,6 +970,3 @@ footer .address {
     letter-spacing: 0.88px;
     text-transform: uppercase;
 }
-
-
-

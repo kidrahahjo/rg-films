@@ -16,6 +16,8 @@
 			$('.header-area .nav').slideToggle(200);
 		});
 	}
+
+
 	
 	//Mobile view of carousel
 	var controleScreenHeight = function(){
