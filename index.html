@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+       
         <!-- ***** Header Area Start ***** -->
         <header class="header-area header-sticky">
             <div class="top-header" style="background-color: #101820ff; height: 30px;"></div>
@@ -30,7 +31,7 @@
                             <!-- ***** Menu Start ***** -->
                             <ul class="nav">
                                 <li><a href="#welcome" class="active">Home</a></li>
-                                <li><a href="#what-we-do">What we do</a></li>
+                                <li><a href="#what-we-do">What we do</a></li>                                
                                 <li><a href="#team">Team</a></li>
                                 <li><a href="#media">Gallery</a></li>
                                 <li><a href="#news">News & Media</a></li>
@@ -74,7 +75,7 @@
                         </div>
                     </div>
                     <!-- ***** Features Small Item Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" >
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 h-100" >
                         <div class="features-small-item">
                             <div class="icon">
                                 <i><img src="assets/images/what-we-do/camera-resized.png" alt=""></i>
@@ -86,10 +87,11 @@
                             </p>
                         </div>
                     </div>
+                    
                     <!-- ***** Features Small Item End ***** -->
 
                     <!-- ***** Features Small Item Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 h-100"  data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
                         <div class="features-small-item">
                             <div class="icon">
                                 <i><img src="assets/images/what-we-do/portfolio-resized.png" alt=""></i>
@@ -105,20 +107,20 @@
                     <!-- ***** Features Small Item End ***** -->
 
                     <!-- ***** Features Small Item Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 h-100" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
                         <div class="features-small-item">
                             <div class="icon">
                                 <i><img src="assets/images/what-we-do/music-resized.png" alt=""></i>
                             </div>
                             <h5 class="features-title">Music Video</h5>
                             <p>
-                                A music video connects an artist and a listener, as well as connecting a listener to an audience.
+                                A music video connects an artist and a listener, as well as connects a listener to the audience.
                                 In many ways, they are an important medium for contemporary pop culture and technology.
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                        <div class="features-small-item">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 h-100" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                        <div class="features-small-item box-cell">
                             <div class="icon">
                                 <i><img src="assets/images/what-we-do/ads-resized.png" alt=""></i>
                             </div>
@@ -128,18 +130,19 @@
                             </p>
                         </div>
                     </div>
+                    
                     <!-- ***** Features Small Item End ***** -->
-                </div>
+
             </div>
         </section>
+
 
         <!-- ***** Team Start ***** -->
         <section class="section" id="team">
             <div class="container">
-                <!-- ***** Section Title Start ***** -->
                 <div class="col-lg-12">
                     <div class="center-heading">
-                        <h2 class="section-title">Our Team</h2>
+                         <h2 class="section-title">Our Team</h2>
                     </div>
                 </div>
                 <div class="offset-lg-3 col-lg-6">
@@ -149,23 +152,77 @@
                         </p>
                     </div>
                 </div>
-                <!-- ***** Section Title End ***** -->
-                <div class="row team" id="team-box">
-                    <!-- ***** Team Item Start ***** -->
-                    <div class="col-lg-5 team-item">
-                        <i><img src="assets/images/team/rudrakaushish.png" alt=""></i>
-                        <h3 class="user-name">Rudra Kaushish</h3>
-                        <span>Owner</span>
+                <div class="row team justify-content-md-center" id="team-box">
+                    <div class="col-lg-4 team-item ">
+                        <i data-toggle="modal" data-target="#producerModal"><img src="assets/images/team/rudrakaushish.png" alt=""></i>
+                        <h3 class="user-name" data-toggle="modal" data-target="#producerModal">Rudra Kaushish</h3>
+                        <span>Owner and Producer</span>
                     </div>
-                    <!-- ***** Team Item End ***** -->
-
-                    <!-- ***** Team Item Start ***** -->
-                    <div class="col-lg-5 team-item">
-                        <i><img src="assets/images/team/chetansharma.png" alt=""></i>
-                        <h3 class="user-name">Chetan Sharma</h3>
+                    <div class="col-lg-4 team-item">
+                        <i data-toggle="modal" data-target="#directorModal"><img src="assets/images/team/chetansharma.png" alt=""></i>
+                        <h3 class="user-name" data-toggle="modal" data-target="#directorModal">Chetan Sharma</h3>
                         <span>Creative Producer</span>
                     </div>
-                    <!-- ***** Team Item End ***** -->
+                </div>
+                <div class="modal fade popup" id="producerModal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="close-modal-button">
+                                <button type="button"  class="close xyz" data-dismiss="modal" aria-label="Close">
+                                    &times;
+                                </button><br/>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <!--<div class="col-sm-12" id="producer">-->
+                                        <div class="col mx-auto">
+                                            <div class="team-item ">
+                                                <i><img src="assets/images/team/rudrakaushish.png" alt=""></i>
+                                                <h3 class="user-name">Rudra Kaushish</h3>
+                                                <span>Owner and Producer</span>
+                                            </div>   
+                                        
+                                            <div class="information .mx-auto">
+                                               <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
+                                            </div> 
+                                        <!--</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade popup" id="directorModal" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="close-modal-button">
+                                <button type="button"  class="close xyz" data-dismiss="modal" aria-label="Close">
+                                    &times;
+                                </button><br/>
+                                </div>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <!--<div class="col-sm-12" id="producer">-->
+                                        <div class="col mx-auto">
+                                            <div class="team-item ">
+                                                <i><img src="assets/images/team/chetansharma.png" alt=""></i>
+                                                <h3 class="user-name">Chetan Sharma</h3>
+                                                <span>Director</span>
+                                            </div>   
+                                        
+                                            <div class="information .mx-auto">
+                                               <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</span>
+                                            </div> 
+                                        <!--</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -190,77 +247,49 @@
             <!-- ***** Section Title End ***** -->
 
             <div id="gallery-carousel1" class="carousel slide" data-ride="carousel" data-keyboard="true">
-                <div class="carousel-inner">
+                <div class="carousel-inner justify-content-md-center">
                     <div class="carousel-item active">
-                        <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-01.png" alt="">
+                        <div class="row justify-content-md-center">
+                        <div class="col-lg-6 col-md-10 col-sm-12">
+                            <div class="blog-post-thumb styling ">
+                                <div class="img gallery-image">
+                                    <img src="assets/images/blog-item-01.png" alt="" class="gallery-image">
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <!-- <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="blog-post-thumb styling">
                                 <div class="img">
                                     <img src="assets/images/blog-item-02.png" alt="">
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        </div> -->
+                        <!-- <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="blog-post-thumb styling">
                                 <div class="img">
                                     <img src="assets/images/blog-item-03.png" alt="">
+                                </div>
+                            </div>
+                        </div> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-md-center">
+                        <div class="col-lg-6 col-md-10 col-sm-12">
+                            <div class="blog-post-thumb styling ">
+                                <div class="img gallery-image">
+                                    <img src="assets/images/blog-item-02.png" alt="" class="gallery-image">
                                 </div>
                             </div>
                         </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-02.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-03.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-01.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-03.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-02.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
-                            <div class="blog-post-thumb styling">
-                                <div class="img">
-                                    <img src="assets/images/blog-item-01.png" alt="">
+                        <div class="row justify-content-md-center">
+                        <div class="col-lg-6 col-md-10 col-sm-12">
+                            <div class="blog-post-thumb styling ">
+                                <div class="img gallery-image">
+                                    <img src="assets/images/blog-item-03.png" alt="" class="gallery-image">
                                 </div>
                             </div>
                         </div>
@@ -276,7 +305,10 @@
                 </a>
               </div>
             </div>
+        </div>
         </section>
+
+            
         <!-- carousel end -->
 
 
@@ -298,11 +330,11 @@
                 </div>
                 <!-- ***** Section Title End ***** -->
 
-                <div id="news-carousel1" class="carousel slide" data-ride="carousel" data-keyboard="true">
+                <div id="news-carousel1" class="carousel" data-ride="carousel" data-keyboard="true">
                    <div class="carousel-inner">
                        <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="row justify-content-md-center">
+                            <div class="col-lg-5 col-md-6 col-sm-12">
                                 <div class="blog-post-thumb">
                                     <div class="img">
                                         <img src="assets/images/blog-item-01.png" alt="">
@@ -320,7 +352,7 @@
                             </div>
 
 
-                            <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="col-lg-5 col-md-6 col-sm-12">
                                 <div class="blog-post-thumb">
                                     <div class="img">
                                         <img src="assets/images/blog-item-02.png" alt="">
@@ -336,28 +368,12 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="blog-post-thumb">
-                                    <div class="img">
-                                        <img src="assets/images/blog-item-03.png" alt="">
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3>
-                                            <a href="#">Nam gravida purus non</a>
-                                        </h3>
-                                        <div class="text">
-                                            Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
-                                        </div>
-                                        <a href="#" class="main-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        </div>
+                       </div>
+                    
                         <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="row justify-content-md-center">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
                                     <div class="blog-post-thumb">
                                         <div class="img">
                                             <img src="assets/images/blog-item-01.png" alt="">
@@ -375,7 +391,7 @@
                                 </div>
 
 
-                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
                                     <div class="blog-post-thumb">
                                         <div class="img">
                                             <img src="assets/images/blog-item-02.png" alt="">
@@ -386,23 +402,6 @@
                                             </h3>
                                             <div class="text">
                                                 Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
-                                            </div>
-                                            <a href="#" class="main-button">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="blog-post-thumb">
-                                        <div class="img">
-                                            <img src="assets/images/blog-item-03.png" alt="">
-                                        </div>
-                                        <div class="blog-content">
-                                            <h3>
-                                                <a href="#">Nam gravida purus non</a>
-                                            </h3>
-                                            <div class="text">
-                                                Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
                                             </div>
                                             <a href="#" class="main-button">Read More</a>
                                         </div>
@@ -410,29 +409,13 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="row justify-content-md-center">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
                                     <div class="blog-post-thumb">
                                         <div class="img">
                                             <img src="assets/images/blog-item-01.png" alt="">
-                                        </div>
-                                        <div class="blog-content">
-                                            <h3>
-                                                <a href="#">Vivamus ac vehicula dui</a>
-                                            </h3>
-                                            <div class="text">
-                                            Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam egestas augue.
-                                            </div>
-                                            <a href="#" class="main-button">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-4 col-md-6 col-sm-12">
-                                    <div class="blog-post-thumb">
-                                        <div class="img">
-                                            <img src="assets/images/blog-item-02.png" alt="">
                                         </div>
                                         <div class="blog-content">
                                             <h3>
@@ -446,7 +429,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="col-lg-5 col-md-6 col-sm-12">
                                     <div class="blog-post-thumb">
                                         <div class="img">
                                             <img src="assets/images/blog-item-03.png" alt="">
@@ -473,10 +456,166 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
+                </div>    
+                
+                <div id="news-carousel1ipad" class="carousel" data-ride="carousel" data-keyboard="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                         <div class="row justify-content-md-center">
+                             <div class="col-lg-5 col-md-8 col-sm-12">
+                                 <div class="blog-post-thumb">
+                                     <div class="img">
+                                         <img src="assets/images/blog-item-01.png" alt="">
+                                     </div>
+                                     <div class="blog-content">
+                                         <h3>
+                                             <a href="#">Vivamus ac vehicula dui</a>
+                                         </h3>
+                                         <div class="text">
+                                         Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam egestas augue.
+                                         </div>
+                                         <a href="#" class="main-button">Read More</a>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                     
+                         <div class="carousel-item">
+                             <div class="row justify-content-md-center">
+ 
+                                 <div class="col-lg-5 col-md-8 col-sm-12">
+                                     <div class="blog-post-thumb">
+                                         <div class="img">
+                                             <img src="assets/images/blog-item-02.png" alt="">
+                                         </div>
+                                         <div class="blog-content">
+                                             <h3>
+                                                 <a href="#">Phasellus convallis augue</a>
+                                             </h3>
+                                             <div class="text">
+                                                 Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
+                                             </div>
+                                             <a href="#" class="main-button">Read More</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+ 
+                         <div class="carousel-item">
+                             <div class="row justify-content-md-center">
+                                 <div class="col-lg-5 col-md-8 col-sm-12">
+                                     <div class="blog-post-thumb">
+                                         <div class="img">
+                                             <img src="assets/images/blog-item-03.png" alt="">
+                                         </div>
+                                         <div class="blog-content">
+                                             <h3>
+                                                 <a href="#">Nam gravida purus non</a>
+                                             </h3>
+                                             <div class="text">
+                                                 Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
+                                             </div>
+                                             <a href="#" class="main-button">Read More</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <a class="carousel-control-prev gallery-arrow" href="#news-carousel1ipad" role="button" data-slide="prev" style="width: 5%;">
+                             <span class="carousel-control-prev-icon arrow-icon" aria-hidden="true"></span>
+                             <span class="sr-only">Previous</span>
+                         </a>
+                         <a class="carousel-control-next gallery-arrow" href="#news-carousel1ipad" role="button" data-slide="next" style="width: 5%;">
+                             <span class="carousel-control-next-icon arrow-icon" aria-hidden="true"></span>
+                             <span class="sr-only">Next</span>
+                         </a>
+                     </div>
                 </div>
-            </div>
+
+                 <div id="news-carousel1mobile" class="carousel" data-ride="carousel" data-keyboard="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                         <div class="row justify-content-md-center">
+                             <div class="col-lg-5 col-md-8 col-sm-8">
+                                 <div class="blog-post-thumb">
+                                     <div class="img">
+                                         <img src="assets/images/blog-item-01.png" alt="">
+                                     </div>
+                                     <div class="blog-content">
+                                         <h3>
+                                             <a href="#">Vivamus ac vehicula dui</a>
+                                         </h3>
+                                         <div class="text">
+                                         Cras aliquet ligula dui, vitae fermentum velit tincidunt id. Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam egestas augue.
+                                         </div>
+                                         <a href="#" class="main-button">Read More</a>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                        </div>
+                     
+                         <div class="carousel-item">
+                             <div class="row justify-content-md-center">
+ 
+                                 <div class="col-lg-5 col-md-8 col-sm-8">
+                                     <div class="blog-post-thumb">
+                                         <div class="img">
+                                             <img src="assets/images/blog-item-02.png" alt="">
+                                         </div>
+                                         <div class="blog-content">
+                                             <h3>
+                                                 <a href="#">Phasellus convallis augue</a>
+                                             </h3>
+                                             <div class="text">
+                                                 Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac. Vestibulum finibus urna ut velit venenatis, vel ultrices sapien mattis.
+                                             </div>
+                                             <a href="#" class="main-button">Read More</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+ 
+                         <div class="carousel-item">
+                             <div class="row justify-content-md-center">
+                                 <div class="col-lg-5 col-md-8 col-sm-8">
+                                     <div class="blog-post-thumb">
+                                         <div class="img">
+                                             <img src="assets/images/blog-item-03.png" alt="">
+                                         </div>
+                                         <div class="blog-content">
+                                             <h3>
+                                                 <a href="#">Nam gravida purus non</a>
+                                             </h3>
+                                             <div class="text">
+                                                 Maecenas eu erat vitae dui convallis consequat vel gravida nulla. Vestibulum finibus euismod odio, ut tempus enim varius eu.
+                                             </div>
+                                             <a href="#" class="main-button">Read More</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <a class="carousel-control-prev gallery-arrow" href="#news-carousel1mobile" role="button" data-slide="prev" style="width: 5%;">
+                             <span class="carousel-control-prev-icon arrow-icon" aria-hidden="true"></span>
+                             <span class="sr-only">Previous</span>
+                         </a>
+                         <a class="carousel-control-next gallery-arrow" href="#news-carousel1mobile" role="button" data-slide="next" style="width: 5%;">
+                             <span class="carousel-control-next-icon arrow-icon" aria-hidden="true"></span>
+                             <span class="sr-only">Next</span>
+                         </a>
+                     </div>
+                 </div>
+            </div>    
         </section>
         <!-- ***** News End ***** -->
+
+        
+
+
 
 
         <!-- ***** Footer Area Start ***** -->
@@ -519,6 +658,8 @@
 
         <!-- Global Init -->
         <script src="assets/js/custom.js"></script>
+        
+        
 
 
 

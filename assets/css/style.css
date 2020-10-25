@@ -1,4 +1,6 @@
-/* ---------------------------------------------
+/* build your own custom Bootstrap theme:
+   https://themestr.app
+*//* ---------------------------------------------
 Table of contents
 ------------------------------------------------
 01. setup
@@ -37,7 +39,7 @@ header, nav, section, footer {
 }
 
 .container {
-  align-items: center;
+  align-items: cente
 }
 
 /*
@@ -313,7 +315,7 @@ header
     margin-left: 30px;
 }
 
-.header-area .main-nav .logo img {
+.header-area .main-nav .logo img{
     height: 60px;
     position: relative;
     margin-top: -16px;
@@ -322,6 +324,7 @@ header
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
+
 
 .header-area .main-nav .nav {
     float: right;
@@ -603,6 +606,21 @@ what-we-do
   position: relative;
   margin-bottom: 30px;
 }
+@media (min-width: 577px) and (max-width: 767px){
+  .features-small-item{
+    height: 471px;
+  }
+}
+@media (min-width:768px) and (max-width: 991px){
+  .features-small-item{
+    height: 396px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .features-small-item{
+    height: 346px;
+  }
+}
 
 .features-small-item:hover .icon {
   border: dotted;
@@ -653,7 +671,6 @@ what-we-do
   position: relative;
   z-index: 2;
 }
-
 .home-feature {
   padding-bottom: 0px;
   padding-top: 30px;
@@ -721,13 +738,18 @@ team
   background: #101820ff;
   border-radius: 24px;
   margin-bottom: 30px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   padding-bottom: 25px;
   padding: 24px;
   text-align: center;
   overflow: hidden;
 }
 
+@media screen and (max-width: 990px){
+  .team-item{
+    margin-left: 0px;
+  }
+}
 .team-item img {
   height: 200px;
   position: relative;
@@ -754,24 +776,99 @@ team
   color: #fff;
   letter-spacing: 0.25px;
 }
+.pop-up{
+  z-index: 20;
+  position: absolute;
+  background-color: #101820ff;
+  color: #fff;
+}
+.close{
+    float:right;
+}
+/*#producer{  */
+/*  z-index: 100;*/
+  /*display: none;*/
+/*  position: absolute;*/
+/*}*/
+/*#director{*/
+/*  z-index: 100;*/
+  /*display: none;*/
+/*  position: absolute;*/
+/*}*/
+.information{
+  text-align: center !important;
+  background-color: #101820ff;
+  color: #fff;
+}
+/*#close-button{*/
+/*  float: right;*/
+/*  border: none;*/
+/*  font-weight: bold;*/
+/*  background-color: #fff;*/
+/*  color:#000;*/
+  
+/*}*/
+/*#close-button:hover{*/
+/*  background-color: #fff;*/
+/*  color:#000;*/
 
+/*}*/
+.modal-dialog .modal-content{
+  background-color: #101820ff;
+}
+.xyz{
+  float: right;
+  align-items: right;
+}
+ .close-modal-button .close{
+  /* background-color: #fff; */
+  color: #fff;
+}
+.xyz{
+  color: #fff;
+}
+
+    
 /*
 ---------------------------------------------
 gallery
 ---------------------------------------------
 */
-.gallery-arrow{
+.gallery-arrow .gallery-arrow:hover .gallery-arrow:active .gallery-arrow:focus{
   background-color: #101820ff;
-  opacity: 0;
+  opacity: 1;
 }
 
-.gallery-arrow:hover {
-  background-color: #101820ff;
-  opacity: 0.4;
-}
 div .carousel-item > div .blog-post-thumb{
    padding: 8px;
 }
+.styling{
+  height: 340px;
+}
+.gallery-image{
+  height: 320px !important;
+  width: 100%;
+}
+@media screen and (max-width: 767px){
+  /* .styling{
+    width: 80%;
+    height: auto;
+  }
+  div #gallery-carousel1 > div .carousel-item{
+    margin-left: 10%;
+  } */
+  
+  .carousel-item{
+   max-width: 80%;
+   height: max-content;
+    margin-left: 10%;
+  }
+  /* .carousel-inner{
+    height: max-content;
+  } */
+
+}
+
 /*
 ---------------------------------------------
 blog
@@ -796,7 +893,7 @@ blog
   overflow: hidden;
   border-radius: 20px;
   position: relative;
-  height: 200px;
+  height: 200px;  /*changed height*/
 }
 
 .blog-post-thumb .blog-content {
@@ -887,7 +984,3 @@ footer .address {
     letter-spacing: 0.88px;
     text-transform: uppercase;
 }
-
-
-
-data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e
