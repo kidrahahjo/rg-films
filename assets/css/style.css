@@ -646,6 +646,30 @@ what-we-do
   border-radius: 100%;
 }
 
+.music-img {
+  height: 120px;
+  margin-left: -12px;
+  margin-top: -14%;
+}
+
+.portfolio-img {
+  height: 70px;
+  margin-left: 0%;
+  margin-top: -14%;
+}
+
+.camera-img {
+  height: 56px;
+  margin-left: -2%;
+  margin-top: -14%;
+}
+
+.ad-img {
+  height: 48px;
+  margin-left: -2%;
+  margin-top: -10%;
+}
+
 .features-small-item .features-title {
   font-weight: 500;
   font-size: 18px;
@@ -806,7 +830,6 @@ team
 /*  font-weight: bold;*/
 /*  background-color: #fff;*/
 /*  color:#000;*/
-  
 /*}*/
 /*#close-button:hover{*/
 /*  background-color: #fff;*/
@@ -849,14 +872,24 @@ div .carousel-item > div .blog-post-thumb{
   height: 320px !important;
   width: 100%;
 }
-@media screen and (max-width: 767px){  
+@media screen and (max-width: 767px){
+  /* .styling{
+    width: 80%;
+    height: auto;
+  }
+  div #gallery-carousel1 > div .carousel-item{
+    margin-left: 10%;
+  } */
+
   .carousel-item{
    max-width: 80%;
-   height: max-content;
+   max-height: max-content;
     margin-left: 10%;
   }
-}
-@media screen and (max-width: 535px){
+  /* .carousel-inner{
+    height: max-content;
+  } */
+
 }
 
 /*
@@ -865,14 +898,14 @@ blog
 ---------------------------------------------
 */
 .blog-post-thumb {
-  background: #fff;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  background: #101820ff;
+  /* box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10); */
   border-radius: 16px;
   padding: 24px;
   text-align: center;
   overflow: hidden;
   text-align: center;
-  margin-bottom: 30px;
+  margin: 25px;
 }
 
 .blog-post-thumb.big .img {
@@ -881,9 +914,10 @@ blog
 
 .blog-post-thumb .img {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 24px;
   position: relative;
-  height: 200px;  /*changed height*/
+  border: 5px solid #fff;
+  height: 250px;
 }
 
 .blog-post-thumb .blog-content {
@@ -891,14 +925,11 @@ blog
   padding-top: 50px;
 }
 
-.blog-post-thumb h3 {
+.blog-post-thumb h6 {
   margin-bottom: 20px !important;
-}
-
-.blog-post-thumb h3 a {
   font-weight: 500;
   font-size: 18px;
-  color: #1e1e1e;
+  color: #fff;
   letter-spacing: 0.25px;
   line-height: 26px;
   -webkit-transition: all 0.3s ease 0s;
@@ -907,16 +938,13 @@ blog
   transition: all 0.3s ease 0s;
 }
 
-.blog-post-thumb h3 a:hover {
-  color: #f79862;
-}
-
 .blog-post-thumb .text {
   display: block;
   font-weight: 400;
   font-size: 15px;
-  color: #777;
+  color: #fffaf1;
   letter-spacing: 0.25px;
+  margin-top: -10px;
 }
 
 .blog-post-thumb a.main-button  {
@@ -924,6 +952,10 @@ blog
   display: inline-block;
 }
 
+.logo-media {
+  height: 250px;
+  width: 250px;
+}
 
 /*
 ---------------------------------------------
