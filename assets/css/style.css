@@ -849,24 +849,14 @@ div .carousel-item > div .blog-post-thumb{
   height: 320px !important;
   width: 100%;
 }
-@media screen and (max-width: 767px){
-  /* .styling{
-    width: 80%;
-    height: auto;
-  }
-  div #gallery-carousel1 > div .carousel-item{
-    margin-left: 10%;
-  } */
-  
+@media screen and (max-width: 767px){  
   .carousel-item{
    max-width: 80%;
    height: max-content;
     margin-left: 10%;
   }
-  /* .carousel-inner{
-    height: max-content;
-  } */
-
+}
+@media screen and (max-width: 535px){
 }
 
 /*
